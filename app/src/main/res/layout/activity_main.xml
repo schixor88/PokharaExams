@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".MainActivity">
+
+
+
+    <TextView
+        android:id="@+id/tv_program"
+        android:fontFamily="@font/quicksand"
+        android:textSize="32dp"
+        android:textAlignment="center"
+        android:text="Exam Routines"
+        android:layout_margin="20dp"
+        android:padding="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+
+        android:id="@+id/line_prog"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@id/tv_program"
+        android:background="#ededed"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_eng"
+        android:layout_below="@+id/line_prog"
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content"
+        android:clickable="true">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:textAllCaps="false"
+                    android:textSize="22sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/quicksand"
+                    android:text="ENGINEERING"
+                    android:id="@+id/tv_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+
+            </RelativeLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+    <android.support.v7.widget.CardView
+        android:layout_below="@id/card_eng"
+        android:id="@+id/card_mgmt"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:textAllCaps="false"
+                android:textSize="22sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/quicksand"
+                android:text="MANAGEMENT"
+                android:id="@+id/tv_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+
+        </RelativeLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+    <View
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/card_mgmt"
+        android:background="#ededed"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+
+<TextView
+    android:textSize="18dp"
+    android:textAlignment="center"
+    android:text="Time Start : 11.00am"
+    android:id="@+id/time_tv"
+    android:layout_below="@id/card_mgmt"
+    android:layout_marginTop="70dp"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+
+
+
+</RelativeLayout>

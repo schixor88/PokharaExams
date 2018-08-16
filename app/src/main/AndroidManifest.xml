@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kushagra.pokharaexams">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/main_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".StartActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".EngineeringActivity" />
+        <activity android:name=".ManagementActivity" />
+        <activity android:name=".Engineering.ComputerActivity" />
+        <activity android:name=".Engineering.ElxCommActivity" />
+        <activity android:name=".Engineering.ItActivity" />
+        <activity android:name=".Engineering.SoftwareActivity" />
+        <activity android:name=".Engineering.ElectricalElxActivity" />
+        <activity android:name=".Management.BBA" />
+        <activity android:name=".Management.BBA_BI" />
+        <activity android:name=".Management.BCIS" />
+        <activity android:name=".Management.BCA" />
+        <activity android:name=".Management.BHCM" />
+        <activity android:name=".Management.BHM" />
+        <activity android:name=".Management.BBA_IT" />
+        <activity android:name=".Engineering.CivilActivity"></activity>
+    </application>
+
+</manifest>
